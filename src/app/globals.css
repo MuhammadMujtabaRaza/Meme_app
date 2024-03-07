@@ -2,10 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+} */
+
+.mems img {
+  width: 48vh;
+  margin: auto auto;
+  object-fit: cover;
+  height: 40vh;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.memediv {
+  width: 50vh;
+  /* height: 58vh; */
+  background-color: black;
+  margin: 10vh;
+  border-radius: 10px;
+  border: 1px solid red;
+}
+.memediv h2:hover{
+  text-shadow: red -2px 0 ,
+  cyan 2px 0;
+  transition: .7s;
+}
+.memediv h2{
+text-align: center;
+margin: 2vh;
+font-size: 20px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 800;
+color: white;
+}
+#btnn{
+  width: 20vh;
+  height: 5vh;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 10px;
+  /* background-color: yellowgreen; */
+  border: 2px solid white;
+  font-weight: 600;
+  color: white;
+  margin: 1vh 1vh;
+
+}
+#btnn:hover{
+  color: black;
+  background-color: aqua;
+  transition: .8s;
+}
+.mems {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  justify-content: space-around;
+}
+#hello {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 5vh;
+  font-family: cursive;
+  text-shadow: 1px 1px 10px rgb(200, 100, 50);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,16 +80,49 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background-color: cadetblue;
+  /* background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+.box{
+  width: 100vh;
+  margin: 10vh auto;
+  border-radius: 10px;
+  border: 2px solid rgb(200, 200, 50);
+  background-image: url(../images/images.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+/* .container{
+  width: 80vh;
+  height: 80vh;
+  background-color: red;
+} */
+.inputt{
+  display: flex;
+  justify-content: center;
+  gap: 10vh;
+  padding-top: 11vh;
+  margin-top: -3vh;
+  /* background-color: red; */
+}
+input{
+  width: 40vh;
+  height: 7vh;
+  padding-left: 2vh;
+}
+.Memeh2 h2{
+  text-align: center;
+  font-family: cursive;
+  font-size: 5vh;
+  margin-top: -7vh;
 }
